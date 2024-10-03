@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="port.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <h1>Shreya Shukla</h1>
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#talents">Talents</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#certificate">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li> <!-- Added Contact Link -->
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          Hello, I'm Shreya Shukla. A Computer Science Student and passionate
+          web developer.
+        </p>
+        <button onclick="scrollToSection('experience')">
+          Explore My Experience
+        </button>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <div class="content">
+        <h3>MEMBER OF CODE CLUB</h3>
+        <p>
+          I recently joined this club, and I believe it’s a fantastic
+          opportunity to expand my knowledge and take on new challenges—exactly
+          what I’ve been looking for! Currently, I’m focused on developing and
+          maintaining interactive, user-friendly websites that provide seamless
+          and engaging experiences.
+        </p>
+
+        <h3>OISIS INFOBYTE INTERNSHIP</h3>
+        <p>
+          I’ve developed websites using HTML, CSS, JavaScript, and libraries
+          like Bootstrap, which has provided me with invaluable experience. This
+          journey has not only honed my skills but also inspired me to explore
+          new technologies and frameworks to further enhance my work.
+        </p>
+
+        <h3>GREEN CLUB MEMBER</h3>
+        <p>
+          I’ve joined the Green Club to deepen my understanding of cleanliness
+          and sustainability, and to explore ways we can make our surroundings
+          cleaner and more eco-friendly. I’m also enjoying the opportunity to
+          manage and coordinate events organized by the college, which has
+          helped me develop leadership and organizational skills.
+        </p>
+      </div>
+    </section>
+
+    <!-- Talents Section -->
+    <section id="talents" class="section">
+      <h2>Talents</h2>
+      <div class="content">
+        <ul>
+          <li>Responsive Web Design</li>
+          <li>JavaScript Frameworks (Angular)</li>
+          <li>Backend Development (Node.js)</li>
+          <li>Database Management (MySQL, Postgres)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificate" class="section">
+      <h2>Certificates</h2>
+      <div class="content">
+        <ul>
+          <li>WORKSHOP ON RESEARCH METHODOLOGY IN DIGITAL HUMANITIES</li>
+          <li>WEBCRAFT COMPETITION</li>
+          <li>WORKSHOP ON DISASTER MANAGEMENT</li>
+          <li>BASICS OF JAVASCRIPT</li>
+          <li>PROGRAMMING WITH PYTHON</li>
+          <li>INTRODUCTION TO SQL</li>
+          <li>CSS (Intermediate)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section">
+      <h2>Expertise</h2>
+      <div class="content">
+        <h3>Front-end Development</h3>
+        <p>
+          Proficient in building modern, responsive user interfaces using HTML5,
+          CSS3, and JavaScript using Bootstrap, Angular.js, Tailwind CSS.
+        </p>
+
+        <h3>Back-end Development</h3>
+        <p>
+          Experienced in building scalable back-end solutions using Node.js and
+          working with databases such as Postgres and MySQL.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <div class="content">
+        <form action="your-server-endpoint" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <p>
+          Feel free to contact me at:
+          <a href="mailto:shuklashreya348@example.com">shuklashreya348@example.com</a>
+        </p>
+        <p>&copy; 2024 Shreya Shukla. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="port.js"></script>
+  </body>
+</html>

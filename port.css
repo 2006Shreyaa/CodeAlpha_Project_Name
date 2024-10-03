@@ -1,0 +1,183 @@
+ /* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f0f8; /* Light pink background for the whole page */
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation */
+header {
+    background-color: rgba(28, 7, 95, 0.953); /* Pink background */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color: #5d3ed9; /* Lighter pink on hover */
+}
+
+/* Introduction Section */
+.intro {
+    background-color: #3d278b; /* Medium pink background */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.intro-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e02984; /* Slightly darker pink */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3399; /* Lighter pink on hover */
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff66b2; /* Pink heading */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #ff66b2; /* Pink subheading */
+}
+
+.content p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.1em;
+    color: #292727;
+}
+
+/* Footer */
+footer {
+    background-color: #ff66b2; /* Pink background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #16226f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
