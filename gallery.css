@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.944);
+    color: yellow;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(1, 59, 183);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Gallery Section */
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 3px solid yellow;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  /* Modal for Image Viewing */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.926);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid yellow;
+  }
+  
+  .modal-options {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .modal-options button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(1, 107, 128);
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .modal-options button:hover {
+    background-color: yellow;
+    color: rgba(0, 0, 0, 0.907);
+  }
+  
+  /* Feedback Section */
+  #feedback {
+    background-color: rgb(0, 92, 142);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #feedback h2 {
+    margin-bottom: 15px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.906);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0;
+    color: yellow;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form input[type="text"], form input[type="email"] {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.873);
+  }
+  
+  form textarea {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.866);
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: rgba(0, 0, 0, 0.939);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button:hover {
+    background-color: rgb(3, 115, 168);
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 93, 143);
+    color: yellow;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .modal img {
+      max-width: 95%;
+    }
+  }
+  

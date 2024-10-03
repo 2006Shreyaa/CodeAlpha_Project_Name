@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Image</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Purchase Image</h1>
+    </header>
+
+    <!-- Purchase Section -->
+    <section id="purchase">
+      <div class="purchase-details">
+        <h2>Purchase Details</h2>
+        <img id="purchase-img" src="" alt="Large Image" />
+        <p>Price: <span id="price">---</span></p>
+
+        <!-- Payment Options -->
+        <form id="payment-form">
+          <h3>Select Payment Method</h3>
+          <div>
+            <input
+              type="radio"
+              id="credit-card"
+              name="payment-method"
+              value="Credit Card"
+              checked
+            />
+            <label for="credit-card">Credit/Debit Card</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="paypal"
+              name="payment-method"
+              value="PayPal"
+            />
+            <label for="paypal">Pay with PayPal</label>
+          </div>
+          <button type="submit">Proceed to Payment</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="buy-scripts.js"></script>
+  </body>
+</html>
